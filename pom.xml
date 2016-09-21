@@ -155,15 +155,14 @@
 		</dependency>
 
 	</dependencies>
-	
-	<server>   
-		<id>wildfly</id>   
-		<username>ede</username>
-		<password>ede1234</password>
-	</server>
-	
+
     <build>
         <plugins>
+		            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.1.0.Alpha11</version>
+            </plugin>
             <plugin>
                 <artifactId>maven-eclipse-plugin</artifactId>
                 <version>2.9</version>
